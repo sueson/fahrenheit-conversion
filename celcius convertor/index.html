@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farenheit convertor</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>farenheit convertor</h1>
+        <div class="inputnew">
+            <input id="one" type="number" placeholder="enter your celcius" />
+        </div>
+        <button id="btn" onclick="update()">CONVERT</button>
+        <div class="result">
+
+        </div>
+    </div>
+
+    <script>
+        
+
+        function update()
+        {
+            let one= Number(document.getElementById("one").value)
+            let farenheit = one *(9/5) + 32
+            let result= document.querySelector(".result")
+            result.innerHTML = farenheit + "F"
+            
+        }
+
+    </script>
+</body>
+</html>
